@@ -25,19 +25,19 @@
 
 
         <!-- Hero section -->
-        <section class="h-full w-full min-h-[630px] bg-cover relative bg-[#404eed] ">
+        <section class="h-full w-full min-h-[630px] max-[1024px]:min-h-[750px] max-[425px]:min-h-[720px] bg-cover relative bg-[#404eed] ">
 
 
             <!-- Images -->
             <img src="/images/Image0.svg" class="absolute bottom-[94px] scale-y-150 scale-x-150" alt="">
-            <img src="/images/Image2.svg" class="absolute -left-[280px] bottom-0" alt="">
-            <img src="/images/Image1.svg" class="absolute -right-[220px] bottom-0" alt="">
+            <img src="/images/Image2.svg" class="absolute -left-[280px] bottom-0 max-[1024px]:hidden " alt="">
+            <img src="/images/Image1.svg" class="absolute -right-[220px] bottom-0 max-[1024px]:-right-[15%] max-[760px]:right-[0%] max-[760px]:left-[17%]" alt="">
 
 
             <!-- Navbar -->
             <section class="w-full absolute h-[5rem] top-0">
 
-                <div class="w-[78%] flex h-full flex-row mx-auto items-center">
+                <div class="w-[85%] flex h-full flex-row mx-auto max-[1024px]:w-[90%] items-center">
 
 
                     <div class="h-full flex flex-row ">
@@ -46,20 +46,25 @@
 
 
                     <div class="h-full flex text-white items-center flex-row gap-9 font-semibold font-Arimo mx-auto">
-                        <a class="hover:underline" href="">Download</a>
-                        <a class="hover:underline" href="">Nitro</a>
-                        <a class="hover:underline" href="">Discover</a>
-                        <a class="hover:underline" href="">Safety</a>
-                        <a class="hover:underline" href="">Support</a>
-                        <a class="hover:underline" href="">Blog</a>
-                        <a class="hover:underline" href="">Careers</a>
+                        <a class="hover:underline max-[1024px]:hidden" href="">Download</a>
+                        <a class="hover:underline max-[1024px]:hidden" href="">Nitro</a>
+                        <a class="hover:underline max-[1024px]:hidden" href="">Discover</a>
+                        <a class="hover:underline max-[1024px]:hidden" href="">Safety</a>
+                        <a class="hover:underline max-[1024px]:hidden" href="">Support</a>
+                        <a class="hover:underline max-[1024px]:hidden" href="">Blog</a>
+                        <a class="hover:underline max-[1024px]:hidden" href="">Careers</a>
                     </div>
+
+                    
 
 
                     <div>
                         <button
-                            class="h-full py-2 px-3 bg-white font-Arimo rounded-3xl hover:text-blue-500 transition-all duration-200 text-center text-sm">Open
-                            Discord</button>
+                            class="h-full py-2 px-3 bg-white font-Arimo rounded-3xl hover:text-blue-500 transition-all duration-200 text-center text-sm max-[425px]:text-xs">Open Discord</button>
+                    </div>
+
+                    <div class="cursor-pointer hidden max-[1024px]:block ml-5">
+                        <img src="./images/hamburger.png" width="35px" alt="">
                     </div>
 
 
@@ -69,19 +74,20 @@
             </section>
 
             <!-- Central Content -->
-            <div class="absolute  w-[50%] items-center justify-center mx-auto flex flex-col gap-6 left-[26%] top-[30%]">
-                <span class="text-[70px] text-white font-extrabold tracking-tight font-Lilita">IMAGINE A PLACE...</span>
-                <p class="text-white font-Arimo tracking-wide text-center leading-8">...where you can belong to a school
+            <div class="absolute  w-[60%] items-center justify-center mx-auto flex flex-col gap-6 left-[22%] top-[30%] max-[1200px]:top-[24%] max-[1024px]:left-[5%] max-[1024px]:justify-start max-[1024px]:top-[20%]  max-[1024px]:w-[50%] 
+            max-[760px]:w-full max-[760px]:items-start">
+                <span class="text-[70px] text-white font-extrabold tracking-wide font-Lilita max-[760px]:text-4xl max-[425px]:text-2xl">IMAGINE A PLACE...</span>
+                <p class="text-white font-Arimo tracking-wide text-center leading-8 max-[1024px]:text-left max-[760px]:pr-20 max-[425px]:text-base">...where you can belong to a school
                     club, a gaming group, or a worldwide art community. Where just
                     you and a handful of friends can spend time together. A place that makes it easy to talk every day
                     and hang out more often.</p>
-                <div class="flex flex-row gap-5">
-                    <button class="flex flex-row gap-2 mx-auto items-center justify-center py-4 px-8 text-xl transition-all
+                <div class="flex flex-row gap-5 max-[1024px]:flex-col  max-[1024px]:-ml-48 max-[760px]:ml-0 max-[760px]:mr-0">
+                    <button class="flex flex-row gap-2 mx-auto items-center  justify-center max-[1024px]:text-base max-[1024px]:py-2 max-[1024px]:px-5 py-4 px-8 text-xl transition-all
                     duration-200 hover:text-blue-500 rounded-full bg-white">
                         <img src="/images/icons8-downloading-updates-48.png" width="20px" alt="">
                         Download for Windows
                     </button>
-                    <button class="py-4 px-8 text-xl justify-center rounded-full text-white bg-black">Open Discord in
+                    <button class="py-4 px-8 text-xl items-center rounded-full text-white bg-black max-[1024px]:text-base max-[1024px]:py-2 max-[1024px]:px-5 ">Open Discord in
                         your browser</button>
                 </div>
             </div>
@@ -91,16 +97,17 @@
 
 
         <!-- Section 1 -->
-        <section class="w-full h-full mt-24">
-            <div class="w-[80%] mx-auto flex flex-row justify-center  gap-10">
+        <section class="w-full  mt-24 ">
+            <div class="w-[80%] max-[1200px]:w-[90%] mx-auto align-middle  flex flex-row justify-center max-[1080px]:gap-4 gap-10 
+            max-[760px]:flex-col max-[1280px]:space-y-16">
                 <!-- left section -->
                 <div><img src="/images/section1Image.svg" alt=""></div>
 
                 <!-- right section -->
-                <div class="flex flex-col max-w-[40%] min-h-[580px] pl-12 pt-14 gap-3">
-                    <span class="font-bold font-Secular tracking-wide text-[2.8rem]">Create an invite-only place where
+                <div class="flex flex-col max-w-[50%] max-[760px]:max-w-[100%] max-[760px]:px-0 min-h-[450px] max-[760px]:min-h-[20px] pl-12 pt-14 gap-3 ">
+                    <span class="font-bold font-Secular tracking-wide text-[2.8rem]  max-[1280px]:-mt-24  max-[1280px]:text-5xl max-[760px]:text-2xl">Create an invite-only place where
                         you belong</span>
-                    <p class="font-Arimo leading-7 text-xl font-extralight">Discord servers are organized into
+                    <p class="font-Arimo leading-7 text-xl font-extralight max-[1280px]:text-lg">Discord servers are organized into
                         topic-based channels where you can collaborate, share, and just talk about your day without
                         clogging up a group chat. </p>
                 </div>
@@ -109,12 +116,13 @@
 
 
 
+
         <!-- Section 2 -->
-        <section class="w-full h-full pt-32 -mt-4 bg-[#f6f6f6]">
-            <div class="w-[80%] mx-auto flex flex-row justify-center  gap-10">
+        <section class="w-full h-full pt-32 -mt-4 bg-[#f6f6f6] max-[760px]:hidden">
+            <div class="w-[80%] max-[1200px]:w-[90%] mx-auto flex flex-row justify-center max-[1080px]:gap-4 gap-10">
                 <!-- left section -->
                 <div class="flex flex-col max-w-[37%] min-h-[500px] pl-6 pt-[3.8rem] gap-3">
-                    <span class="font-bold font-Secular tracking-wide text-[2.8rem]">Where hanging out is easy</span>
+                    <span class="font-bold font-Secular tracking-wide text-[2.8rem] max-[1280px]:-mt-24  max-[1280px]:text-5xl max-[760px]:text-2xl max-[760px]:max-w-[100%] max-[760px]:px-0">Where hanging out is easy</span>
                     <p class="font-Arimo leading-7 text-xl font-extralight">Grab a seat in a voice channel when you’re
                         free. Friends in your server can see you’re around and instantly pop in to talk without having
                         to call.</p>
@@ -129,19 +137,36 @@
         </section>
 
 
+        <!-- section2 hidden        visible after 760px -->
+        <section class="w-full  mt-24 hidden bg-[#f6f6f6] max-[760px]:block">
+            <div class="w-[80%] max-[1200px]:w-[90%] mx-auto align-middle  flex flex-row justify-center max-[1080px]:gap-4 gap-10 
+            max-[760px]:flex-col max-[1280px]:space-y-16">
+                <!-- left section -->
+                <div><img src="/images/section2Image.svg" alt=""></div>
 
-        <!-- Section 3 -->
-        <section class="w-full h-full mt-24">
-            <div class="w-[80%] mx-auto flex flex-row justify-center  gap-10">
+                <!-- right section -->
+                <div class="flex flex-col max-w-[50%] max-[760px]:max-w-[100%] max-[760px]:px-0 min-h-[450px] max-[760px]:min-h-[220px] pl-12 pt-14 gap-3 ">
+                    <span class="font-bold font-Secular tracking-wide text-[2.8rem]  max-[1280px]:-mt-24  max-[1280px]:text-5xl max-[760px]:text-2xl">Where hanging out is easy</span>
+                    <p class="font-Arimo leading-7 text-xl font-extralight max-[1280px]:text-lg">Grab a seat in a voice channel when you’re
+                        free. Friends in your server can see you’re around and instantly pop in to talk without having
+                        to call.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- section 3 -->
+        <section class="w-full  mt-24 ">
+            <div class="w-[80%] max-[1200px]:w-[90%] mx-auto align-middle  flex flex-row justify-center max-[1080px]:gap-4 gap-10 
+            max-[760px]:flex-col max-[1280px]:space-y-16">
                 <!-- left section -->
                 <div><img src="/images/section3Image.svg" alt=""></div>
 
                 <!-- right section -->
-                <div class="flex flex-col max-w-[40%] min-h-[580px] pl-16 pt-16 gap-3">
-                    <span class="font-bold font-Secular tracking-wide text-[2.8rem]">From few to a fandom</span>
-                    <p class="font-Arimo leading-7 text-xl font-extralight">Get any community running with moderation
-                        tools and custom member access. Give members special powers, set up private channels, and more.
-                    </p>
+                <div class="flex flex-col max-w-[50%] max-[760px]:max-w-[100%] max-[760px]:px-0 min-h-[450px] max-[760px]:min-h-[120px] pl-12 pt-14 gap-3 ">
+                    <span class="font-bold font-Secular tracking-wide text-[2.8rem]  max-[1280px]:-mt-24  max-[1280px]:text-5xl max-[760px]:text-2xl">From few to a fandom</span>
+                    <p class="font-Arimo leading-7 text-xl font-extralight max-[1280px]:text-lg">Get any community running with moderation
+                        tools and custom member access. Give members special powers, set up private channels, and more.</p>
                 </div>
             </div>
         </section>
@@ -150,16 +175,16 @@
 
         <!-- Section 4 -->
         <section class="w-full bg-[#f6f6f6] pb-32 h-full">
-            <div class="w-[78%] mx-auto flex flex-col justify-center pt-[7rem] items-center gap-6">
-                <span class="font-Secular text-6xl font-extrabold">RELIABLE TECH FOR STAYING CLOSE</span>
-                <p class="w-[85%] text-center font-Arimo leading-7 text-xl font-extralight">Low-latency voice and video
+            <div class="w-[78%] mx-auto flex flex-col justify-center max-[760px]:items-start pt-[7rem] items-center gap-6">
+                <span class="font-Secular text-6xl font-extrabold max-[760px]:text-3xl max-[425px]:text-xl ">RELIABLE TECH FOR STAYING CLOSE</span>
+                <p class="w-[85%] text-center font-Arimo leading-7 text-xl font-extralight max-[760px]:text-left max-[760px]:text-base">Low-latency voice and video
                     feels like you’re in the same room. Wave hello over video, watch friends
                     stream their games, or gather up and have a drawing session with screen share.</p>
                 <img src="images/section4Image.svg" class="scale-125 pt-12" alt="">
                 <img src="/images/section5Image.svg" class="scale-125 pt-12" alt="">
                 <span class="font-Arimo text-3xl py-3  font-extrabold">Ready to start your journey?</span>
                 <button class="flex flex-row gap-2 mx-auto items-center justify-center py-3 px-8 text-xl transition-all
-                    duration-200 hover:bg-blue-400 text-white font-semibold rounded-full bg-blue-500">
+                    duration-200 hover:bg-blue-400 text-white font-semibold rounded-full bg-blue-500 max-[425px]:text-base">
                     <img src="/images/download-white.png" width="20px" alt="">
                     Download for Windows
                 </button>
